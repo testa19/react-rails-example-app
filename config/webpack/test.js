@@ -1,3 +1,7 @@
-const environment = require('./environment')
+const webpackConfig = require('./serverWebpackConfig')
 
-module.exports = environment.toWebpackConfig()
+const testOnly = (_clientWebpackConfig, _serverWebpackConfig) => {
+  // place any code here that is for test only
+}
+
+module.exports = webpackConfig(testOnly)
