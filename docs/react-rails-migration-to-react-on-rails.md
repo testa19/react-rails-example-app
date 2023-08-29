@@ -17,7 +17,7 @@
 | ReScript support        | ❌               | ✅                  |
 | I18n support            | ❌               | ✅                  |
 
-With `react_on_rails` offers better performance and bundle optimizations, especially with the option of getting a subscription to `react_on_rails_pro`.
+`react_on_rails` offers better performance and bundle optimizations, especially with the option of getting a subscription to `react_on_rails_pro`.
 
 ## Steps to migrate
 
