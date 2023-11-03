@@ -1,4 +1,4 @@
 <nav >
-  <%= link_to "Client Side Rendering", '/welcome/csr' %>
-  <%= link_to "Server Side Rendering", '/welcome/ssr' %>
+  <%= link_to "Client Side Rendering", '/welcome/csr', class: current_page?(welcome_csr_path) ? "active" : "" %>
+  <%= link_to "Server Side Rendering", '/welcome/ssr', class: current_page?(welcome_ssr_path) ? "active" : "" %>
 </nav>
