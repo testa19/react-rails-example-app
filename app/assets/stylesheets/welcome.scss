@@ -12,8 +12,12 @@ nav {
   overflow: hidden;
   
   & a {
-    padding: .5rem 3rem;
     background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    @media(min-width: 640px) {
+      padding: .5rem 3rem;
+    }
     
     &:hover {
       background-color: #edd;
