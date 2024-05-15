@@ -15,14 +15,14 @@ You can see the definition of Postgres and Redis in the `.controlplane/templates
 ## Prerequisites
 
 1. Ensure your
-[Control Plane](https://controlplane.com)
+[Control Plane](https://shakacode.controlplane.com)
 account is set up.
 
 2. Set up an `organization` for testing in that account
 and modify `aliases.common.cpln_org` in `.controlplane/controlplane.yml`.
 
 3. Install Control Plane CLI (and configure access)
-[docs here](https://docs.controlplane.com/quickstart/quick-start-3-cli#getting-started-with-the-cli).
+[docs here](https://shakadocs.controlplane.com/quickstart/quick-start-3-cli#getting-started-with-the-cli).
 You can update the `cpln` command line with the same command as installation,
 `npm install -g @controlplane/cli`.
 Then run `cpln login` to ensure access.
