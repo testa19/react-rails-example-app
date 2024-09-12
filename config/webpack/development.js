@@ -1,22 +1,13 @@
-const path = require('path')
-const { devServer, inliningCss } = require('shakapacker')
+process.env.NODE_ENV = process.env.NODE_ENV || "development";
+const util = require("util");
+const { merge } = require("shakapacker");
+const baseConfig = require("./base");
 
-const webpackConfig = require('./serverClientOrBoth')
+const developmentConfig = {
+  mode: "development",
+  devtool: false
+};
 
-const developmentEnvOnly = (clientWebpackConfig, serverWebpackConfig) => {
-  //plugins
-  if (inliningCss ) {
-    // Note, when this is run, we're building the server and client bundles in separate processes.
-    // Thus, this plugin is not applied.
-    const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
-    clientWebpackConfig.plugins.push(
-      new ReactRefreshWebpackPlugin({
-        overlay:{
-          sockPort: devServer.port
-        }
-      })
-    )
-  }
-}
-
-module.exports = webpackConfig(developmentEnvOnly)
+const config = merge(baseConfig, developmentConfig);
+console.log(util.inspect(config, { depth: null, colors: true }));
+module.exports = config;
