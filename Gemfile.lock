@@ -203,7 +203,7 @@ GEM
       ffi (~> 1.0)
     rdoc (6.7.0)
       psych (>= 4.0.0)
-    react-rails (3.1.1)
+    react-rails (2.7.1)
       babel-transpiler (>= 0.7.0)
       connection_pool
       execjs
@@ -296,7 +296,7 @@ DEPENDENCIES
   listen (~> 3.5)
   puma (~> 5.0)
   rails (~> 7.0)
-  react-rails (~> 3.1.0)
+  react-rails (~> 2.7.0)
   rspec-rails (~> 5.1)
   sass-rails (~> 5.0)
   selenium-webdriver
