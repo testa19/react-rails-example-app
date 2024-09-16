@@ -1,3 +1,3 @@
-const { generateWebpackConfig } = require('shakapacker')
+const { webpackConfig, merge } = require("shakapacker");
 
-module.exports = generateWebpackConfig()
+module.exports = webpackConfig;
