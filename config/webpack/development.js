@@ -9,5 +9,8 @@ const developmentConfig = {
 };
 
 const config = merge(baseConfig, developmentConfig);
+config.optimization = {
+  minimize: false
+}
 console.log(util.inspect(config, { depth: null, colors: true }));
 module.exports = config;
